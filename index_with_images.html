@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Shop UAE</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 9999px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cart-badge {
+      background: red;
+      color: white;
+      font-size: 12px;
+      border-radius: 9999px;
+      padding: 2px 6px;
+      margin-right: 4px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-600">🐾 Pet Shop UAE</h1>
+      <nav>
+        <ul class="flex space-x-4 space-x-reverse">
+          <li><a href="#" class="text-gray-700 hover:text-pink-500">الرئيسية</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-pink-500">منتجاتنا</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-pink-500">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-pink-100 py-16 text-center">
+    <h2 class="text-4xl font-bold mb-4">دلّـل كلبك بأفضل الأطعمة</h2>
+    <p class="mb-6 text-lg">أطعمة صحية ومكافآت لذيذة لكلبك في الإمارات</p>
+    <a href="#" class="bg-pink-600 text-white py-2 px-6 rounded hover:bg-pink-700 transition">ابدأ التسوق الآن</a>
+  </section>
+
+  <!-- Products -->
+  <section class="py-12 px-4">
+    <h3 class="text-3xl font-semibold text-center mb-8">منتجات مختارة</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Product 1 -->
+      <div class="bg-white shadow rounded p-4 text-center">
+        <img src="https://images.unsplash.com/photo-1601758123927-196c203f2117?auto=format&fit=crop&w=300&q=80" alt="Dog Food" class="mx-auto mb-4">
+        <h4 class="font-bold text-lg mb-2">أكل كلاب طبيعي</h4>
+        <p class="text-sm mb-4">مغذي ولذيذ لجميع الأعمار</p>
+        <button onclick="addToCart()" class="bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600">أضف للسلة</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white shadow rounded p-4 text-center">
+        <img src="https://images.unsplash.com/photo-1573981385826-7f0bd0e9b2aa?auto=format&fit=crop&w=300&q=80" alt="Dog Treats" class="mx-auto mb-4">
+        <h4 class="font-bold text-lg mb-2">مكافآت تدريب</h4>
+        <p class="text-sm mb-4">مثالية لتعليم كلبك</p>
+        <button onclick="addToCart()" class="bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600">أضف للسلة</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white shadow rounded p-4 text-center">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=300&q=80" alt="Accessories" class="mx-auto mb-4">
+        <h4 class="font-bold text-lg mb-2">إكسسوارات</h4>
+        <p class="text-sm mb-4">أطواق، ألعاب، وأكثر</p>
+        <button onclick="addToCart()" class="bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600">أضف للسلة</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    © 2025 Pet Shop UAE. جميع الحقوق محفوظة.
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/971501234567" class="floating-whatsapp" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png"/>
+    تواصل عبر واتساب
+  </a>
+
+  <!-- Cart Counter -->
+  <div class="fixed top-4 left-4 z-50">
+    🛒 <span class="cart-badge" id="cart-count">0</span> عنصر
+  </div>
+
+  <script>
+    let cartCount = 0;
+    function addToCart() {
+      cartCount++;
+      document.getElementById('cart-count').innerText = cartCount;
+    }
+  </script>
+
+</body>
+</html>
