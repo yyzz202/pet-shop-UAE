@@ -2,99 +2,135 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pet Shop UAE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    body { font-family: 'Cairo', sans-serif; }
-    .floating-whatsapp {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      z-index: 1000;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Pet Shop, UAE, طعام كلاب, طعام قطط, مستلزمات حيوانات أليفة, Dog Food, Cat Accessories" />
+    <meta name="description" content="Pet Shop UAE لبيع أكل الكلاب والقطط وأفضل مستلزمات الحيوانات الأليفة في الإمارات." />
+    <title>Pet Shop UAE - متجر الحيوانات الأليفة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background: #fffaf0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: orange;
+            padding: 10px 20px;
+            color: white;
+        }
+        header img {
+            height: 50px;
+        }
+        nav a {
+            margin-left: 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #fde3cf;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .btn {
+            background-color: deeppink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product {
+            background: white;
+            border-radius: 10px;
+            width: 300px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .whatsapp {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            z-index: 999;
+        }
+        .whatsapp img {
+            width: 60px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
-<body class="bg-orange-50 text-gray-800">
+<body>
 
-  <header class="bg-white shadow-md py-4">
-    <div class="container mx-auto flex items-center justify-between px-4">
-      <div class="flex items-center space-x-4 space-x-reverse">
-        <img src="logo.png" alt="Logo" class="w-24 h-auto">
-        <h1 class="text-2xl font-bold text-orange-600">Pet Shop UAE</h1>
-      </div>
-      <nav class="hidden md:flex space-x-6 space-x-reverse text-sm font-semibold">
-        <a href="#home" class="hover:text-orange-500">الرئيسية</a>
-        <a href="#products" class="hover:text-orange-500">المنتجات</a>
-        <a href="#offers" class="hover:text-orange-500">عروض اليوم</a>
-        <a href="#cats" class="hover:text-orange-500">مستلزمات القطط</a>
-        <a href="#dogs" class="hover:text-orange-500">مستلزمات الكلاب</a>
-        <a href="#about" class="hover:text-orange-500">من نحن</a>
-        <a href="#contact" class="hover:text-orange-500">اتصل بنا</a>
-      </nav>
+<header>
+    <h1>Pet Shop UAE</h1>
+    <img src="https://img.icons8.com/emoji/96/dog-face.png" alt="logo" />
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#">المنتجات</a>
+        <a href="#">اتصل بنا</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>دلل كلبك بأفضل الأطعمة</h1>
+    <p>أطعمة صحية ومكافآت لإرضاء الكلاب والقطط في الإمارات</p>
+    <button class="btn">ابدأ التسوق الآن</button>
+</section>
+
+<section class="products">
+    <div class="product">
+        <img src="https://img.freepik.com/free-photo/dog-food-bowl-dry-kibble-table_1150-26949.jpg" alt="Dog Food" />
+        <h3>أكل كلاب طبيعي</h3>
+        <p>مغذي وآمن لجميع الأعمار</p>
+        <button class="btn">أضف للسلة</button>
     </div>
-  </header>
-
-  <section id="home" class="text-center py-16 bg-orange-100">
-    <h2 class="text-3xl font-bold mb-4">دلل حيوانك الأليف بأفضل المنتجات</h2>
-    <p class="mb-6">كل ما تحتاجه من أكل، ألعاب، ومستلزمات القطط والكلاب</p>
-    <a href="#products" class="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition">تسوق الآن</a>
-  </section>
-
-  <section id="products" class="py-12 px-4">
-    <h3 class="text-2xl font-bold text-center text-orange-700 mb-8">المنتجات المختارة</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="bg-white p-4 rounded shadow text-center">
-        <img src="https://images.unsplash.com/photo-1598133894005-56b9c734b5c5?auto=format&fit=crop&w=600&q=80" class="h-40 w-full object-cover mb-4 rounded">
-        <h4 class="font-bold text-lg">أكل كلاب طبيعي</h4>
-        <p>صحي وآمن لجميع الأعمار</p>
-      </div>
-      <div class="bg-white p-4 rounded shadow text-center">
-        <img src="https://images.unsplash.com/photo-1587049352844-4a1f74e70d3e?auto=format&fit=crop&w=600&q=80" class="h-40 w-full object-cover mb-4 rounded">
-        <h4 class="font-bold text-lg">إكسسوارات القطط</h4>
-        <p>ألعاب وأطواق وصناديق مريحة</p>
-      </div>
-      <div class="bg-white p-4 rounded shadow text-center">
-        <img src="https://images.unsplash.com/photo-1566843970313-12a3ed53b259?auto=format&fit=crop&w=600&q=80" class="h-40 w-full object-cover mb-4 rounded">
-        <h4 class="font-bold text-lg">مكافآت تدريب</h4>
-        <p>مثالية للتدريب والتحفيز</p>
-      </div>
+    <div class="product">
+        <img src="https://img.freepik.com/free-photo/cute-kitten-posing-studio_23-2148971454.jpg" alt="Cat Treats" />
+        <h3>مكافآت تدريب</h3>
+        <p>مثالية لتدريب الحيوانات</p>
+        <button class="btn">أضف للسلة</button>
     </div>
-  </section>
+    <div class="product">
+        <img src="https://img.freepik.com/free-photo/pet-accessories-table_23-2148971484.jpg" alt="Accessories" />
+        <h3>إكسسوارات</h3>
+        <p>أطواق، ألعاب، وأكثر</p>
+        <button class="btn">أضف للسلة</button>
+    </div>
+</section>
 
-  <section id="offers" class="bg-orange-100 py-12 text-center">
-    <h3 class="text-xl font-bold mb-4 text-orange-700">عروض اليوم</h3>
-    <p>خصومات تصل إلى 30٪ على مجموعة مختارة من المنتجات</p>
-  </section>
+<a class="whatsapp" href="https://wa.me/971528705455" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/100/25D366/whatsapp.png" alt="WhatsApp" />
+</a>
 
-  <section id="cats" class="py-10 text-center">
-    <h3 class="text-xl font-bold text-orange-700 mb-4">مستلزمات القطط</h3>
-    <p>طعام، ألعاب، صناديق فضلات، والمزيد</p>
-  </section>
+<footer>
+    &copy; 2025 جميع الحقوق محفوظة - Pet Shop UAE
+</footer>
 
-  <section id="dogs" class="py-10 text-center bg-orange-50">
-    <h3 class="text-xl font-bold text-orange-700 mb-4">مستلزمات الكلاب</h3>
-    <p>أطعمة طبيعية، مقويات، ألعاب تدريبية، وأطواق</p>
-  </section>
-
-  <section id="about" class="py-10 px-4 text-center bg-white">
-    <h3 class="text-xl font-bold text-orange-700 mb-4">من نحن</h3>
-    <p>Pet Shop UAE هو متجر إماراتي متخصص في توفير أفضل المنتجات للحيوانات الأليفة بجودة عالية وتوصيل سريع.</p>
-  </section>
-
-  <section id="contact" class="py-10 px-4 text-center bg-gray-100">
-    <h3 class="text-xl font-bold text-orange-700 mb-4">اتصل بنا</h3>
-    <p>عبر واتساب أو البريد الإلكتروني أو وسائل التواصل</p>
-  </section>
-
-  <a href="https://wa.me/971528705455" class="floating-whatsapp" target="_blank">
-    <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp" class="w-12 h-12">
-  </a>
-
-  <footer class="bg-gray-800 text-white text-center py-6 mt-12">
-    &copy; 2025 Pet Shop UAE - جميع الحقوق محفوظة
-  </footer>
 </body>
 </html>
