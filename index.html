@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop UAE</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <div class="text-center py-10 bg-pink-100">
+        <h1 class="text-3xl font-bold mb-4">دلل كلبك بأفضل الأطعمة</h1>
+        <p class="mb-4">أطعمة صحية ومكافآت لإرضاء الكلاب والقطط في الإمارات</p>
+        <a href="#products" class="bg-pink-600 text-white px-6 py-2 rounded">ابدأ التسوق الآن</a>
+        <p class="mt-6 text-sm">— English below —</p>
+    </div>
+
+    <div class="text-center py-10 bg-green-100">
+        <h1 class="text-3xl font-bold mb-4">Pamper Your Pet with the Best Food</h1>
+        <p class="mb-4">Healthy food and treats for dogs and cats in the UAE</p>
+        <a href="#products" class="bg-green-600 text-white px-6 py-2 rounded">Start Shopping</a>
+    </div>
+
+    <div id="products" class="py-10 grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+        <div class="bg-white shadow rounded p-4 text-center">
+            <img src="images/dog-food.jpg" alt="Dog Food" class="mx-auto mb-4 rounded-lg h-40 object-cover">
+            <h2 class="font-bold">أكل كلاب طبيعي / Natural Dog Food</h2>
+            <p>مغذي وآمن لجميع الأعمار / Nutritious & safe for all ages</p>
+            <button class="mt-4 bg-pink-500 text-white px-4 py-2 rounded">أضف للسلة / Add to Cart</button>
+        </div>
+        <div class="bg-white shadow rounded p-4 text-center">
+            <img src="images/dog-treat.jpg" alt="Dog Treats" class="mx-auto mb-4 rounded-lg h-40 object-cover">
+            <h2 class="font-bold">مكافآت تدريب / Dog Treats</h2>
+            <p>مثالية لتدريب الحيوان / Perfect for training</p>
+            <button class="mt-4 bg-pink-500 text-white px-4 py-2 rounded">أضف للسلة / Add to Cart</button>
+        </div>
+        <div class="bg-white shadow rounded p-4 text-center">
+            <img src="images/accessories.jpg" alt="Accessories" class="mx-auto mb-4 rounded-lg h-40 object-cover">
+            <h2 class="font-bold">إكسسوارات / Accessories</h2>
+            <p>أطواق، ألعاب، وأكثر / Collars, toys & more</p>
+            <button class="mt-4 bg-pink-500 text-white px-4 py-2 rounded">أضف للسلة / Add to Cart</button>
+        </div>
+    </div>
+
+    <a href="https://wa.me/971528705455" class="floating-whatsapp" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+        &copy; 2025 Pet Shop UAE. جميع الحقوق محفوظة.
+    </footer>
+
+</body>
+</html>
