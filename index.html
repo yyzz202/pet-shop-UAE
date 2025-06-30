@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Shop UAE</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+    .logo {
+      height: 40px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-800">
+  <header class="bg-orange-500 p-4 flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="logo.png" alt="شعار" class="logo" />
+      <h1 class="text-white text-2xl font-bold">Pet Shop UAE</h1>
+    </div>
+    <nav class="space-x-4 space-x-reverse">
+      <a href="#" class="text-white hover:underline">الرئيسية</a>
+      <a href="#" class="text-white hover:underline">المنتجات</a>
+      <a href="#" class="text-white hover:underline">من نحن</a>
+      <a href="#" class="text-white hover:underline">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <main class="p-6 text-center">
+    <h2 class="text-3xl font-bold mb-2">دل كلبك بأفضل الأطعمة</h2>
+    <p class="mb-4 text-gray-700">أطعمة صحية ومكافآت لإرضاء الكلاب والقطط في الإمارات</p>
+    <a href="#" class="bg-pink-600 text-white px-6 py-2 rounded hover:bg-pink-700">ابدأ التسوق الآن</a>
+
+    <div class="mt-10 p-6 bg-green-100 text-left" dir="ltr">
+      <h2 class="text-2xl font-bold mb-2">Pamper Your Pet with the Best Food</h2>
+      <p class="mb-4 text-gray-700">Healthy food and treats for dogs and cats in the UAE</p>
+      <a href="#" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Start Shopping</a>
+    </div>
+
+    <section class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 shadow rounded">
+        <img src="food.jpg" alt="أكل طبيعي" class="w-full h-40 object-cover mb-2" />
+        <h3 class="font-bold">أكل كلاب طبيعي</h3>
+        <p class="text-sm text-gray-600">مغذي وآمن لجميع الأعمار</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <img src="treats.jpg" alt="مكافآت تدريب" class="w-full h-40 object-cover mb-2" />
+        <h3 class="font-bold">مكافآت تدريب</h3>
+        <p class="text-sm text-gray-600">مثالية لتدريب الحيوانات</p>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <img src="accessories.jpg" alt="إكسسوارات" class="w-full h-40 object-cover mb-2" />
+        <h3 class="font-bold">إكسسوارات</h3>
+        <p class="text-sm text-gray-600">أطواق، ألعاب، وأكثر</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-white bg-gray-800 p-4 mt-10">
+    جميع الحقوق محفوظة © Pet Shop UAE 2025
+  </footer>
+
+  <a href="https://wa.me/971528705455" target="_blank" class="floating-whatsapp">
+    <img src="https://img.icons8.com/ios-filled/50/4CAF50/whatsapp.png" alt="واتساب" />
+  </a>
+</body>
+</html>
