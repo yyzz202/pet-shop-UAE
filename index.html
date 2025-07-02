@@ -9,54 +9,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Cairo', sans-serif;
-    }
-    .floating-whatsapp {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      z-index: 1000;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 9999px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .cart-badge {
-      background: red;
-      color: white;
-      font-size: 12px;
-      border-radius: 9999px;
-      padding: 2px 6px;
-      margin-right: 4px;
-    }
+ font-family: 'Cairo', sans-serif;
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-
+<div style="margin-top: 20px; display: flex; gap: 20px; flex-wrap: wrap;">
+  <div style="flex: 1;">
+    
+  </div>
+  <div style="flex: 1;">
+   
+  </div>
+</div>
   <!-- Header -->
   <header class="bg-white shadow">
     <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-pink-600">🐾 Pet Shop UAE</h1>
-      <nav>
-        <ul class="flex space-x-4 space-x-reverse">
-          <li><a href="#" class="text-gray-700 hover:text-pink-500">الرئيسية</a></li>
-          <li><a href="#" class="text-gray-700 hover:text-pink-500">منتجاتنا</a></li>
-          <li><a href="#" class="text-gray-700 hover:text-pink-500">تواصل معنا</a></li>
-        </ul>
+    <h1 class="text-2xl font-bold text-pink-600 flex items-center gap-2 justify-center">
+  <!-- علم الإمارات على اليمين -->
+  <img src="images/uae1.png" alt="UAE Flag" class="w-6 h-4">
+
+  <!-- اسم المتجر -->
+  <span>Pet Shop UAE🐾</span>
+</h1>
+</h1>  
+       <nav>
+        <ul class="flex space-x-4 space-x-reverse text-lg font-bold text-gray-900">
+  <li><a href="#" class="hover:text-pink-600">الرئيسية</a></li>
+  <li><a href="#" class="hover:text-pink-600">منتجاتنا</a></li>
+  <li><a href="#" class="hover:text-pink-600">تواصل معنا</a></li>
+</ul>
       </nav>
     </div>
-  </header>
+ <section class="bg-pink-100 py-10 text-center" dir="rtl">
+  <div class="flex items-center justify-center gap-6 flex-wrap">
 
-  <!-- Hero AR -->
-  <section class="bg-pink-100 py-16 text-center" dir="rtl">
-    <h2 class="text-4xl font-bold mb-4">دلّـل كلبك بأفضل الأطعمة</h2>
-    <p class="mb-6 text-lg">أطعمة صحية ومكافآت لذيذة لكلبك في الإمارات</p>
-    <a href="#" class="bg-pink-600 text-white py-2 px-6 rounded hover:bg-pink-700 transition">ابدأ التسوق الآن</a>
+    <!-- صورة يمين -->
+     <img src="images/dog1.jpg" alt="Dog Right" class="w-24 h-auto rounded-lg">
+    <!-- النص -->
+    <div>
+      <h2 class="text-4xl font-bold mb-4">دلّ كلبك بأفضل الأطعمة</h2>
+      <p class="mb-6 text-lg">أطعمة صحية ومكافآت لذيذة لكلبك في الإمارات</p>
+      <a href="#" class="bg-pink-600 text-white py-2 px-6 rounded hover:bg-pink-700 transition">ابدأ التسوق الآن</a>
+    </div>
+
+    <!-- صورة يسار -->
+    <img src="images/dog2.jpg" alt="Dog Left" class="w-24 h-auto rounded-lg">
+
+  </div>
+ </header>
   </section>
 
   <!-- Hero EN -->
@@ -67,31 +67,72 @@
   </section>
 
   <!-- Products -->
-  <section class="py-12 px-4">
-    <h3 class="text-3xl font-semibold text-center mb-8">منتجات مختارة / Featured Products</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+  <!-- Dog & Cat Products Section -->
+<section class="bg-white py-16 text-center">
+  <h2 class="text-3xl font-bold mb-8">منتجات جديدة / New Products</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
 
-      <div class="bg-white shadow rounded p-4 text-center">
-        <img src="https://images.unsplash.com/photo-1601758123927-196c203f2117?auto=format&fit=crop&w=300&q=80" alt="Dog Food" class="mx-auto mb-4">
-        <h4 class="font-bold text-lg mb-2">أكل كلاب طبيعي / Natural Dog Food</h4>
-        <p class="text-sm mb-4">مغذي ولذيذ لجميع الأعمار / Nutritious & delicious for all ages</p>
-        <button onclick="addToCart()" class="bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600">أضف للسلة / Add to Cart</button>
-      </div>
+    <!-- Bocão -->
+    <div class="bg-gray-100 p-4 rounded-lg shadow">
+      <img src="images/boc.jpg" alt="Bocão 15kg" class="rounded-lg mb-4 mx-auto h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">Bocão 15kg</h3>
+      <p class="text-gray-700 mb-2">يحتوي على مضادات الأكسدة، طاقة عالية، شعر صحي، فيتامينات متعددة</p>Complete food for adult dogs. Rich in vitamins and energy for strong muscles and shiny coat
+      <p class="font-bold text-pink-600 mb-2">السعر: 115 درهم</p>
+      <a href="https://wa.me/971528705455?text=أرغب%20في%20طلب%20Bocão%2015kg" target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded">اطلب الآن</a>
+    </div>
 
-      <div class="bg-white shadow rounded p-4 text-center">
-        <img src="https://images.unsplash.com/photo-1573981385826-7f0bd0e9b2aa?auto=format&fit=crop&w=300&q=80" alt="Dog Treats" class="mx-auto mb-4">
-        <h4 class="font-bold text-lg mb-2">مكافآت تدريب / Dog Treats</h4>
-        <p class="text-sm mb-4">مثالية لتعليم كلبك / Ideal for training</p>
-        <button onclick="addToCart()" class="bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600">أضف للسلة / Add to Cart</button>
-      </div>
+    <!-- Birbo -->
+    <div class="bg-gray-100 p-4 rounded-lg shadow">
+      <img src="images/birbo.jpg" alt="Birbo 25kg" class="rounded-lg mb-4 mx-auto h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">Birbo 25kg</h3>
+      <p class="text-gray-700 mb-2">لجلد صحي وشعر ناعم، تقليل الرائحة، امتصاص عالي للبروتين</p>  Meat-flavored food for adult dogs. Promotes digestion and reduces stool odor
+      <p class="font-bold text-pink-600 mb-2">السعر: 155 درهم</p>
+      <a href="https://wa.me/971528705455?text=أرغب%20في%20طلب%20Birbo%2025kg" target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded">اطلب الآن</a>
+    </div>
 
-      <div class="bg-white shadow rounded p-4 text-center">
-        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=300&q=80" alt="Accessories" class="mx-auto mb-4">
-        <h4 class="font-bold text-lg mb-2">إكسسوارات / Accessories</h4>
-        <p class="text-sm mb-4">أطواق، ألعاب، وأكثر / Collars, Toys & More</p>
-        <button onclick="addToCart()" class="bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600">أضف للسلة / Add to Cart</button>
-      </div>
+    <!-- Complete Dog Food -->
+    <div class="bg-gray-100 p-4 rounded-lg shadow">
+      <img src="images/df.jpg" alt="Complete Dog Food" class="rounded-lg mb-4 mx-auto h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">Complete Dog Food</h3>
+      <p class="text-gray-700 mb-2">60% بروتين حيواني، يحافظ على البشرة الصحية والمعوية</p> High-protein formula (60%) to support digestion, skin, and immunity
+      <p class="font-bold text-pink-600 mb-2">السعر: 120 درهم</p>
+      <a href="https://wa.me/971528705455?text=أرغب%20في%20طلب%20Complete%20Dog%20Food" target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded">اطلب الآن</a>
+    </div>
 
+    <!-- Prince Dog Food -->
+    <div class="bg-gray-100 p-4 rounded-lg shadow">
+      <img src="images/beef.jpg" alt="Prince Dog Food 405g" class="rounded-lg mb-4 mx-auto h-48 object-contain">
+      <h3 class="text-xl font-bold mb-2">Prince Dog Food 405g</h3>
+      <p class="text-gray-700 mb-2">خالي من الجينات المعدلة والمواد الحافظة، غني باللحم</p>Wet beef dog food. No preservatives, high palatability
+      <p class="font-bold text-pink-600 mb-2">السعر: 5 دراهم</p>
+      <a href="https://wa.me/971528705455?text=أرغب%20في%20طلب%20Prince%20405g" target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded">اطلب الآن</a>
+    </div>
+
+    <!-- VitaDay Cat Food -->
+    <div class="bg-gray-100 p-4 rounded-lg shadow">
+      <img src="images/vd.jpg" alt="Complete Dog Food" class="rounded-lg mb-4 mx-auto h-48 object-contain">
+
+      <h3 class="text-xl font-bold mb-2">VitaDay Cat Food 10kg</h3>
+      <p class="text-gray-700 mb-2">يحتوي على فيتامينات، يمنع حصوات المثانة، يحافظ على الوزن</p>  Ideal for sterilized cats. Helps prevent urinary stones and supports a healthy coat
+      <p class="font-bold text-pink-600 mb-2">السعر: 100 درهم</p>
+      <a href="https://wa.me/971528705455?text=أرغب%20في%20طلب%20VitaDay%2010kg" target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded">اطلب الآن</a>
+  
+  </div>
+<div class="bg-gray-100 p-4 rounded-lg shadow">
+  <img src="images/vime.jpg" alt="Vime-ECTO Spray" class="w-full h-48 object-contain mb-4">
+  <h3 class="text-lg font-bold mb-1">Vime-ECTO Spray 250ml</h3>
+  <p class="text-sm text-gray-700 mb-2">
+    Long-lasting protection against fleas, ticks, and lice. Suitable for dogs and cats.
+  </p>
+  <p class="text-sm text-gray-700 mb-2">
+    بخاخ للحماية الطويلة من البراغيث والقراد والقمل. مناسب للكلاب والقطط.
+  </p>
+  <p class="text-pink-600 font-semibold mb-2">السعر: 80 درهم</p>
+  <a href="https://wa.me/971528705455?text=أرغب%20في%20طلب%20 Vime-ECTO Spray 250ml"target="_blank" class="bg-pink-500 text-white py-2 px-4 rounded">اطلب الآن</a>
+     
+      </a>
+</div>
+  
     </div>
   </section>
 
@@ -100,12 +141,8 @@
     © 2025 Pet Shop UAE. جميع الحقوق محفوظة.
   </footer>
 
-  <!-- WhatsApp -->
-  <a href="https://wa.me/971528705455" class="floating-whatsapp" target="_blank">
-    <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png"/>
-    تواصل عبر واتساب
-  </a>
-
+  
+  
   <!-- Cart -->
   <div class="fixed top-4 left-4 z-50">
     🛒 <span class="cart-badge" id="cart-count">0</span> عنصر
@@ -118,5 +155,15 @@
       document.getElementById('cart-count').innerText = cartCount;
     }
   </script>
+
+</a>
+
+</section>
+<!-- WhatsApp -->
+<a href="https://wa.me/971528705455"
+   target="_blank"
+   style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 12px 16px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 999;">
+    💬 WhatsApp
+</a>
 </body>
 </html>
